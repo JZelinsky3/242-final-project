@@ -1,0 +1,59 @@
+{
+  "recipes": [
+    {
+      "title": "Classic Spaghetti Bolognese",
+      "description": "A traditional Italian pasta dish with a rich, hearty meat sauce.",
+      "image": "pics/sb.jpeg",
+      "author": "Chef Maria",
+      "difficulty": "Intermediate",
+      "cookTime": "1 hour",
+      "meal": "morning",
+      "category": "nutritious",
+      "ingredients": [
+        "1 pound ground beef",
+        "1 onion, chopped",
+        "3 cloves garlic, minced",
+        "1 can crushed tomatoes",
+        "2 tablespoons tomato paste",
+        "1 teaspoon dried oregano",
+        "Salt and pepper to taste",
+        "8 ounces spaghetti"
+      ],
+      "instructions": [
+        "In a large skillet, brown the ground beef over medium heat.",
+        "Add the onion and garlic, and cook until softened.",
+        "Stir in the crushed tomatoes, tomato paste, and oregano. Season with salt and pepper.",
+        "Simmer the sauce for 30 minutes, stirring occasionally.",
+        "Cook the spaghetti according to the package instructions.",
+        "Serve the spaghetti topped with the Bolognese sauce."
+      ]
+    },
+    {
+      "title": "Lemon Garlic Roasted Chicken",
+      "description": "A flavorful roasted chicken dish infused with tangy lemon and aromatic garlic.",
+      "image": "pics/lgc.jpg",
+      "author": "Chef Michael",
+      "difficulty": "Easy",
+      "cookTime": "1 hour 15 minutes",
+      "meal": "evening",
+      "category": "special",
+      "ingredients": [
+        "1 whole chicken (3-4 pounds)",
+        "4 cloves garlic, minced",
+        "2 lemons, sliced",
+        "2 tablespoons olive oil",
+        "1 teaspoon dried thyme",
+        "Salt and pepper to taste"
+      ],
+      "instructions": [
+        "Preheat the oven to 375°F (190°C).",
+        "Rinse the chicken and pat it dry with paper towels.",
+        "Mix the minced garlic, olive oil, thyme, salt, and pepper in a small bowl.",
+        "Rub the garlic mixture all over the chicken, including under the skin.",
+        "Place the lemon slices inside the chicken cavity.",
+        "Roast the chicken for 1 hour 15 minutes or until the juices run clear.",
+        "Let the chicken rest for 10 minutes before carving and serving."
+      ]
+    }
+  ]
+}

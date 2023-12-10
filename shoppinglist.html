@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RecipeHub</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="main-header">
+        <header>
+            <div class="header-content">
+                <div class="logo">
+                    <a href="../../index.html"><h1>RECIPEHUB</h1></a> <br>
+                </div>
+            </div>
+            <div class="hamburger-menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            
+            <nav class="main-nav" id="mainNav">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="recipes.html">RECIPES</a></li>
+                    <li><a href="mealplanner.html">MEAL PLANNER</a></li>
+                    <li><a href="shoppinglist.html">SHOPPING LIST</a></li>
+                    <li><a href="userprofile.html">USER PROFILE</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <div class="main-content">
+        <div class="text1">
+            <h2>Shopping List</h2> <br>
+            <p>Users can create and manage shopping lists based on the ingredients required for their selected recipes. The system will allow users to mark items as purchased and automatically update the list.</p>
+        </div>
+    </div>
+
+    <div class="main-content1">
+        <h2>Here you can add Items to your Shopping List</h2>
+
+            <div class="img3">
+                <img src="pics/shopl.png" width="300">
+            </div>
+            
+            <ul class="list">
+                <li><div class="drop">
+                    <button class="dropbtn">Dairy</button>
+                    <div class="drop-content">
+                            <p><label for="product-name">Product Name:</label></p>
+                            <p><input type="text" id="product-name"></p>
+                        <div class="middle">
+                            <button id="add-comment">Add Item</button>
+                        </div>
+                        <div id="responses"></div>
+                    </div>
+                </div></li>
+
+                <li><div class="drop">
+                    <button class="dropbtn">Produce</button>
+                    <div class="drop-content">
+                            <p><label for="product-name">Product Name:</label></p>
+                            <p><input type="text" id="product-name"></p>
+                        <div class="middle">
+                            <button id="add-comment">Add Item</button>
+                        </div>
+                        <div id="responses"></div>
+                    </div>
+                </div></li>
+
+                <li><div class="drop">
+                    <button class="dropbtn">Meat</button>
+                    <div class="drop-content">
+                            <p><label for="product-name">Product Name:</label></p>
+                            <p><input type="text" id="product-name"></p>
+                        <div class="middle">
+                            <button id="add-comment">Add Item</button>
+                        </div>
+                        <div id="responses"></div>
+                    </div>
+                </div></li>
+            </ul>
+    </div>
+
+    <footer>
+        <div class="footer-cols">
+            <div class="footer-col">
+                <h3>&copy; Joe Zelinsky</h3>
+            </div>
+        </div>
+
+        <div class="col">
+            
+            <section class="footer-cols2">
+                <h3>Contact:</h3>
+                <p>123-456-7890</p>
+                <p>support@recipehub.com</p>
+            </section> <br>
+            
+            <section class="footer-cols2">
+                <a href="contact.html"><b>CONTACT US</b></a>
+            </section>
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
