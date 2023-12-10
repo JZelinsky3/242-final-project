@@ -30,33 +30,36 @@ const showEmailResult = async (e) => {
     e.preventDefault();
     const result = document.getElementById("result");
     let response = await getEmailResult();
-    if (response.status == 210) {
-        result.innerHTML = "Email Successfully Sent!";
+    if (response.status == 200) {
+      result.innerHTML = "Email Successfully Sent";
     } else {
-        result.innerHTML = "Unfortunately, your email wasn't sent.";
+      result.innerHTML = "Unfortunately, your email was unable to be sent.";
     }
-};
-
-const getEmailResult = async () => {
+  };
+  
+  const getEmailResult = async (e) => {
     const form = document.getElementById("cform");
     const formData = new FormData(form);
     const object = Object.fromEntries(formData);
     const json = JSON.stringify(object);
-
+    const result = document.getElementById("result");
+    result.innerHTML = "Please wait...";
+  
     try {
-        const response = await fetch("https://api.web3forms.com/submit", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json",
-                Accept: "application/json",
-            },
-            body: json,
-        });
-        return response;
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: json,
+      });
+      return response;
     } catch (error) {
-        console.error(error);
-        document.getElementById("result").innerHTML = "Unfortunately, your email wasn't sent";
+      console.log(error);
+      document.getElementById("result").innerHTML =
+        "Sorry your email couldn't be sent";
     }
-};
-
-document.getElementById("cform").onsubmit = showEmailResult;
+  };
+  
+  document.getElementById("cform").onsubmit = showEmailResult;

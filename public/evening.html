@@ -35,13 +35,12 @@
 
     <div class="main-content">
         <div class="text1">
-            <h2>Morning Recipe</h2> <br>
+            <h2>Evening Recipe</h2> <br>
             <div id="recipeContainer"></div>
         </div>
     </div>
 
     <script src="recipes.js" defer></script>
-    <script src="client.js" defer></script>
     
     <footer>
         <div class="footer-cols">
@@ -64,7 +63,33 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-            fetchRecipesByCategory('morning', 'nutritious');
+            fetch('recipes.json')
+                .then(response => response.json())
+                .then(data => {
+                    const recipeContainer = document.getElementById('recipeContainer');
+
+                    const eveningRecipe = data.recipes.find(recipe => recipe.meal === 'evening');
+
+                    if (eveningRecipe) {
+                        const recipeElement = document.createElement('div');
+                        recipeElement.innerHTML = `
+                            <h3>${eveningRecipe.title}</h3>
+                            <p>${eveningRecipe.description}</p>
+                            <ul>
+                                ${eveningRecipe.ingredients.map(ingredient => `<li>${ingredient}</li>`).join('')}
+                            </ul>
+                            <p>Instructions:</p>
+                            <ol>
+                                ${eveningRecipe.instructions.map(instruction => `<li>${instruction}</li>`).join('')}
+                            </ol>
+                            <hr>
+                        `;
+                        recipeContainer.appendChild(recipeElement);
+                    } else {
+                        recipeContainer.innerHTML = '<p>No morning recipe found.</p>';
+                    }
+                })
+                .catch(error => console.error('Error fetching data:', error));
         });
     </script>
 </body>

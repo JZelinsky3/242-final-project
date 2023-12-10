@@ -35,14 +35,42 @@
 
     <div class="main-content">
         <div class="text1">
-            <h2>Evening Recipe</h2> <br>
-            <div id="recipeContainer"></div>
+            <h2>Recipes</h2> <br>
+            <p>Here users can find different recipes for any types of meals for themselves as well as for family or parties. Once selected a recipe, the ingredients will appear and you can select which ingredients you want to send to your shopping list.</p>
         </div>
     </div>
 
+    <div class="main-content1">
+        <h2>Our Recipes</h2>
+
+        <div class="img3">
+            <img src="pics/recipe.png" width="400" height="250">
+        </div>
+            
+        <ul class="list">
+            <li>
+                <div class="drop">
+                    <button class="dropbtn">Morning</button>
+                    <div class="drop-content">
+                        <a href="morning.html">Nutritious</a>
+                    </div>
+                </div>
+            </li>
+
+            <li>
+                <div class="drop">
+                    <button class="dropbtn">Evening</button>
+                    <div class="drop-content">
+                        <a href="evening.html">Special</a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <div id="recipeContainer"></div>
+    </div>
+
     <script src="recipes.js" defer></script>
-    <script src="client.js" defer></script>
-    
+
     <footer>
         <div class="footer-cols">
             <div class="footer-col">
@@ -61,11 +89,5 @@
             </section>
         </div>
     </footer>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            fetchRecipesByCategory('evening', 'special');
-        });
-    </script>
 </body>
 </html>
