@@ -9,6 +9,38 @@ body {
     background-color: #f0f0f0;
 }
 
+/* meal plan */
+.box {
+    background-color: #b6e9a8;
+    border: 5px solid #2c7327;
+}
+
+.col5 {
+    flex: 1;
+}
+
+.col2of3 {
+    flex: 2;
+}
+
+.col3of3 {
+    flex: 2;
+}
+
+.col2 {
+    display: flex;
+    column-gap: 1%;
+}
+
+h4 {
+    text-align: center;
+}
+
+.middle {
+    text-align: center;
+    justify-content: center;
+}
+
 .main-header {
     top: 0;
     left: 0;
